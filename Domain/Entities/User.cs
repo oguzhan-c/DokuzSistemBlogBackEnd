@@ -1,8 +1,8 @@
-using NArchitecture.Core.Persistence.Repositories;
+using NArchitecture.Core.Security.Entities;
 
 namespace Domain.Entities;
 
-public class User : Entity<int>
+public class User : User<int>
 {
 
     public virtual ICollection<Image> Images { get; set; }
@@ -14,5 +14,7 @@ public class User : Entity<int>
     public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = default!;
     public virtual ICollection<EmailAuthenticator> EmailAuthenticators { get; set; } = default!;
 
-    public virtual bool IsAuthor { get; set; } = false;
+    public bool IsAuthor { get; set; } = false;
+    public string FirstName{ get; set; } = default!;
+    public string LastName { get; set; }  = default!;
 }

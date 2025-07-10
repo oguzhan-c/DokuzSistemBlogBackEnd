@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{9762758D-1B8E-4A10-B015-3CF92C26C09C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{6EB22A58-61C9-478E-BB82-DC6EE871F262}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{B17C36D5-2E1F-4F4A-B9FD-7322FCA48F84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{9762758D-1B8E-4A10-B015-3CF92C26C09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9762758D-1B8E-4A10-B015-3CF92C26C09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9762758D-1B8E-4A10-B015-3CF92C26C09C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB22A58-61C9-478E-BB82-DC6EE871F262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB22A58-61C9-478E-BB82-DC6EE871F262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB22A58-61C9-478E-BB82-DC6EE871F262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB22A58-61C9-478E-BB82-DC6EE871F262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17C36D5-2E1F-4F4A-B9FD-7322FCA48F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17C36D5-2E1F-4F4A-B9FD-7322FCA48F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17C36D5-2E1F-4F4A-B9FD-7322FCA48F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17C36D5-2E1F-4F4A-B9FD-7322FCA48F84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
