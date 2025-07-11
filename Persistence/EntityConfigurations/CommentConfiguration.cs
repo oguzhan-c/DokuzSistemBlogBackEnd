@@ -56,22 +56,22 @@ public class CommentConfiguration : IEntityTypeConfiguration<Comment>
 
             yield return new Comment
             {
-                Id = 1,
+                Id = 2,
                 Text = "Thanks for sharing these best practices. The section on performance optimization was particularly helpful.",
                 CreatedDate = DateTime.UtcNow.AddDays(-7),
-                ParentCommentId = 0,
+                ParentCommentId = 1,
                 PostId = PostConfiguration.TurkeyPostId,
                 UserId = UserConfiguration.AuthorId,
             };
             
             yield return new Comment
             {
-                Id = 2,
+                Id = 1,
                 Text = "Hello. I Love this article.",
                 CreatedDate = DateTime.UtcNow,
                 ParentCommentId = null,
                 PostId = PostConfiguration.CinemaPostId,
-                UserId = UserConfiguration.AdminId,
+                UserId = UserConfiguration.UserId,
             };
         }
     }

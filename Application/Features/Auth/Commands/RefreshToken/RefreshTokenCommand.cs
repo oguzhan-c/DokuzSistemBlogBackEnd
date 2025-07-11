@@ -1,4 +1,4 @@
-using Application.Features.Auth.Rules;
+﻿using Application.Features.Auth.Rules;
 using Application.Services.AuthService;
 using Application.Services.UsersService;
 using Domain.Entities;

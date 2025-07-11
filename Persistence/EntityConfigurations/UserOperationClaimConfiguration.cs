@@ -1,6 +1,8 @@
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Application.Features.Users.Constants;
+
 
 namespace Persistence.EntityConfigurations;
 
@@ -33,11 +35,26 @@ public class UserOperationClaimConfiguration : IEntityTypeConfiguration<UserOper
         {
             yield return new()
             {
-                Id = 0,
+                Id = 1,
                 UserId = UserConfiguration.AdminId,
                 OperationClaimId = OperationClaimConfiguration.AdminId
             };
             
+            //TODO : ADD claim ides after created Db
+            // yield return new()
+            // {
+            //     Id = 2,
+            //     UserId = UserConfiguration.UserId,
+            //     OperationClaim = UserConfiguration,
+            //     
+            // };
+            // yield return new()
+            // {
+            //     Id = 3,
+            //     UserId = UserConfiguration.UserId,
+            //     OperationClaim = UserConfiguration,
+            //     
+            // };
         }
     }
 }

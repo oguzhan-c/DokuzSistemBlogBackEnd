@@ -36,9 +36,9 @@ public class PostConfiguration : IEntityTypeConfiguration<Post>
         builder.HasQueryFilter(p => !p.DeletedDate.HasValue);
     }
 
-    public static int  TurkeyPostId { get; } = 0;
-    public static int  CinemaPostId { get; } = 1;
-    public static int  AIPostId { get; } = 2;
+    public static int  TurkeyPostId { get; } = 1;
+    public static int  CinemaPostId { get; } = 2;
+    public static int  AIPostId { get; } = 3;
     private IEnumerable<Post> _seeds
     {
         get

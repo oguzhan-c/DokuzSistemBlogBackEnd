@@ -45,9 +45,9 @@ public class CategoryConfiguration : IEntityTypeConfiguration<Category>
         builder.HasQueryFilter(c => !c.DeletedDate.HasValue);
     }
 
-    public static int  TravelCategoryId { get; } = 0;
-    public static int  TechnologyCategoryId { get; } = 1;
-    public static int  ArtCategoryId { get; } = 2;
+    public static int  TravelCategoryId { get; } = 1;
+    public static int  TechnologyCategoryId { get; } = 2;
+    public static int  ArtCategoryId { get; } = 3;
     private IEnumerable<Category> _seeds
     {
         get

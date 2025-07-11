@@ -1,4 +1,4 @@
-using System.Web;
+﻿using System.Web;
 using Application.Features.Auth.Rules;
 using Application.Services.AuthenticatorService;
 using Application.Services.Repositories;
@@ -14,7 +14,7 @@ namespace Application.Features.Auth.Commands.EnableEmailAuthenticator;
 
 public class EnableEmailAuthenticatorCommand : IRequest, ISecuredRequest
 {
-    public int  UserId { get; set; }
+    public int UserId { get; set; }
     public string VerifyEmailUrlPrefix { get; set; }
 
     public string[] Roles => [];
@@ -24,7 +24,7 @@ public class EnableEmailAuthenticatorCommand : IRequest, ISecuredRequest
         VerifyEmailUrlPrefix = string.Empty;
     }
 
-    public EnableEmailAuthenticatorCommand(int  userId, string verifyEmailUrlPrefix)
+    public EnableEmailAuthenticatorCommand(int userId, string verifyEmailUrlPrefix)
     {
         UserId = userId;
         VerifyEmailUrlPrefix = verifyEmailUrlPrefix;
@@ -74,7 +74,7 @@ public class EnableEmailAuthenticatorCommand : IRequest, ISecuredRequest
                 new Mail
                 {
                     ToList = toEmailList,
-                    Subject = "Verify Your Email - DokuzSistem",
+                    Subject = "Verify Your Email - NArchitecture",
                     TextBody =
                         $"Click on the link to verify your email: {request.VerifyEmailUrlPrefix}?ActivationKey={HttpUtility.UrlEncode(addedEmailAuthenticator.ActivationKey)}"
                 }

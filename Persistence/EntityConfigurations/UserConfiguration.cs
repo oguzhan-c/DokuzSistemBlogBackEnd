@@ -82,9 +82,9 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
 
     }
        
-    public static int  AdminId { get; } = 0;
-    public static int  AuthorId { get; } = 1;
-    public static int  UserId { get; } = 2;
+    public static int  AdminId { get; } = 1;
+    public static int  AuthorId { get; } = 2;
+    public static int  UserId { get; } = 3;
     
     private IEnumerable<User> _seeds
     {

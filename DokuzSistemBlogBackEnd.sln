@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{B17C36D5-2E1F-4F4A-B9FD-7322FCA48F84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{433CC15A-C6FA-4B5B-981D-8BE948550ECD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{B17C36D5-2E1F-4F4A-B9FD-7322FCA48F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B17C36D5-2E1F-4F4A-B9FD-7322FCA48F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B17C36D5-2E1F-4F4A-B9FD-7322FCA48F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433CC15A-C6FA-4B5B-981D-8BE948550ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433CC15A-C6FA-4B5B-981D-8BE948550ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433CC15A-C6FA-4B5B-981D-8BE948550ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433CC15A-C6FA-4B5B-981D-8BE948550ECD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
